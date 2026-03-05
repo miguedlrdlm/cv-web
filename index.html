@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Miguel de la Rosa — CV Web (Ciberseguridad)</title>
+  <meta name="description" content="CV web: carta de presentación, CV, LinkedIn, presentación oral, blog divulgativo, Perusall y oferta de empleo." />
+  <style>
+    :root{
+      --bg:#0b0f17; --card:#111827; --text:#e5e7eb; --muted:#9ca3af;
+      --accent:#38bdf8; --border:#1f2937;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Arial;
+      background:linear-gradient(180deg,var(--bg),#06070b); color:var(--text);
+      line-height:1.55;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:980px; margin:0 auto; padding:24px}
+    header{
+      position:sticky; top:0; backdrop-filter: blur(10px);
+      background:rgba(11,15,23,.75); border-bottom:1px solid var(--border);
+      z-index:10;
+    }
+    .nav{
+      display:flex; gap:14px; flex-wrap:wrap; align-items:center; justify-content:space-between;
+      padding:14px 24px;
+    }
+    .brand{display:flex; flex-direction:column; gap:2px}
+    .brand strong{font-size:16px}
+    .brand span{font-size:12px; color:var(--muted)}
+    .links{display:flex; gap:10px; flex-wrap:wrap}
+    .links a{
+      font-size:13px; padding:8px 10px; border:1px solid var(--border);
+      border-radius:10px; color:var(--text);
+    }
+    .links a:hover{border-color:var(--accent)}
+    main{padding:28px 0 60px}
+    .hero{
+      display:grid; gap:18px; padding:22px; border:1px solid var(--border);
+      border-radius:18px; background:rgba(17,24,39,.7);
+    }
+    .hero h1{margin:0; font-size:28px}
+    .hero p{margin:0; color:var(--muted)}
+    .pillrow{display:flex; gap:10px; flex-wrap:wrap; margin-top:6px}
+    .pill{
+      font-size:12px; padding:6px 10px; border-radius:999px;
+      border:1px solid var(--border); color:var(--text);
+      background:rgba(31,41,55,.35);
+    }
+    section{
+      margin-top:22px; padding:22px; border:1px solid var(--border);
+      border-radius:18px; background:rgba(17,24,39,.55);
+    }
+    section h2{margin:0 0 10px; font-size:20px}
+    .muted{color:var(--muted)}
+    .grid{display:grid; gap:14px}
+    @media (min-width: 860px){ .grid.two{grid-template-columns:1fr 1fr} }
+    ul{margin:10px 0 0 18px}
+    .btnrow{display:flex; gap:10px; flex-wrap:wrap; margin-top:12px}
+    .btn{
+      display:inline-block; padding:10px 12px; border-radius:12px;
+      border:1px solid var(--border); color:var(--text); font-size:13px;
+      background:rgba(31,41,55,.35);
+    }
+    .btn:hover{border-color:var(--accent)}
+    .small{font-size:12px}
+    footer{margin-top:22px; color:var(--muted); font-size:12px; text-align:center}
+    .kbd{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace; font-size:12px}
+    .callout{
+      border-left:3px solid var(--accent);
+      padding:10px 12px; background:rgba(56,189,248,.08);
+      border-radius:12px; margin-top:12px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand">
+      <strong>Miguel de la Rosa</strong>
+      <span>CV web · Ciberseguridad · Madrid / Remoto</span>
+    </div>
+    <nav class="links" aria-label="Navegación">
+      <a href="#carta">Carta</a>
+      <a href="#cv">CV</a>
+      <a href="#linkedin">LinkedIn</a>
+      <a href="#oral">Presentación oral</a>
+      <a href="#blog">Blog</a>
+      <a href="#perusall">Perusall</a>
+      <a href="#oferta">Oferta</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- INICIO / PRESENTACIÓN -->
+  <div class="hero" id="inicio">
+    <h1>Cybersecurity · Seguridad de la Información</h1>
+    <p>
+      Soy <strong>Miguel de la Rosa</strong>, profesional de <strong>Seguridad de la Información</strong> en entorno corporativo,
+      con foco en <strong>entorno Microsoft (Azure / Active Directory / Endpoint)</strong> y automatización con <strong>PowerShell</strong>.
+      Busco evolucionar hacia un rol de <strong>Cybersecurity Analyst</strong> orientado a operaciones, detección y respuesta.
+    </p>
+
+    <div class="pillrow" aria-label="Áreas clave">
+      <span class="pill">Azure</span>
+      <span class="pill">Active Directory</span>
+      <span class="pill">Endpoint (MECM)</span>
+      <span class="pill">PowerShell</span>
+      <span class="pill">Seguridad de la información</span>
+      <span class="pill">Inglés</span>
+    </div>
+
+    <div class="btnrow">
+      <!-- Cambia los enlaces cuando subas tu PDF -->
+      <a class="btn" href="assets/CV_Miguel_de_la_Rosa.pdf" target="_blank" rel="noopener">Descargar CV (PDF)</a>
+      <a class="btn" href="https://www.linkedin.com/in/miguel-de-la-rosa-de-la-morena-97800121a/" target="_blank" rel="noopener">Ver LinkedIn</a>
+      <a class="btn" href="#oferta">Oferta objetivo</a>
+    </div>
+
+    <div class="callout small">
+      <strong>Nota:</strong> esta web integra carta, CV, LinkedIn, presentación oral, blog divulgativo, evidencias de Perusall y la oferta elegida.
+    </div>
+  </div>
+
+  <!-- CARTA DE PRESENTACIÓN -->
+  <section id="carta">
+    <h2>Carta de presentación</h2>
+    <p class="muted small">Copia aquí el cuerpo de tu carta (sin encabezados tipo dirección postal si no quieres). Ajustada a la oferta de Cybersecurity Analyst.</p>
+
+    <p>Estimado equipo de selección:</p>
+
+    <p>
+      Me llamo <strong>Miguel de la Rosa</strong> y actualmente trabajo en el área de <strong>Seguridad de la Información</strong>.
+      Me gustaría presentar mi candidatura para el puesto de <strong>Cybersecurity Analyst (100% remoto)</strong>.
+    </p>
+
+    <p>
+      [Aquí añade 1 párrafo con tu experiencia real alineada: operaciones de seguridad, endpoint/cloud, procedimientos, automatización,
+      coordinación con TI, documentación e informes.]
+    </p>
+
+    <p>
+      [Aquí añade 1 párrafo conectando con la oferta: monitorización/detección, respuesta a incidentes, forense, threat intel/ATT&CK,
+      gestión de vulnerabilidades, formación/concienciación.]
+    </p>
+
+    <p>
+      Gracias por su tiempo y consideración. Quedo a su disposición para ampliar información en una entrevista.
+    </p>
+
+    <p>Atentamente,<br><strong>Miguel de la Rosa</strong></p>
+  </section>
+
+  <!-- CV -->
+  <section id="cv">
+    <h2>CV tradicional</h2>
+    <div class="grid two">
+      <div>
+        <p class="muted">Resumen profesional (3–5 líneas):</p>
+        <p>
+          Analista de seguridad de la información con experiencia en entorno corporativo, orientado a operaciones, mejora continua
+          y automatización. Especialidad en stack Microsoft (Azure/AD/Endpoint) y documentación de procedimientos.
+        </p>
+
+        <p class="muted">Experiencia (modelo):</p>
+        <ul>
+          <li><strong>Sener</strong> — Seguridad de la información (ene. 2024 – actual)</li>
+          <li><strong>Sener</strong> — Departamento de sistemas de la información (prácticas) (oct. 2021 – may. 2024)</li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="muted">Competencias técnicas (ajusta a tu realidad):</p>
+        <ul>
+          <li>Microsoft Azure · Active Directory · Endpoint (MECM)</li>
+          <li>PowerShell (automatización)</li>
+          <li>Seguridad de la información · Procedimientos · Documentación</li>
+          <li>Inglés: [B2/C1]</li>
+        </ul>
+
+        <p class="muted">Certificaciones:</p>
+        <ul>
+          <li>Microsoft Certified: Security, Compliance, and Identity Fundamentals (jun. 2022)</li>
+        </ul>
+
+        <div class="btnrow">
+          <a class="btn" href="assets/CV_Miguel_de_la_Rosa.pdf" target="_blank" rel="noopener">Abrir CV PDF</a>
+          <a class="btn" href="#contacto">Contacto</a>
+        </div>
+      </div>
+    </div>
+
+    <p class="small muted">
+      Consejo: sube tu CV como PDF en la carpeta <span class="kbd">assets/</span> y actualiza el enlace.
+    </p>
+  </section>
+
+  <!-- LINKEDIN -->
+  <section id="linkedin">
+    <h2>Perfil de LinkedIn (optimizado)</h2>
+    <p class="muted small">
+      Aquí incluyes el titular recomendado, tu “Acerca de” y el enlace. Sirve para mostrar coherencia entre CV y LinkedIn.
+    </p>
+
+    <p><strong>Titular sugerido:</strong> Cybersecurity Analyst | Operaciones de seguridad | Azure | PowerShell | Active Directory</p>
+
+    <p><strong>Acerca de (borrador):</strong><br>
+      Soy analista de seguridad de la información con experiencia en entorno corporativo, orientado a operaciones y mejora continua.
+      Trabajo con stack Microsoft (Azure/AD/Endpoint) y automatización con PowerShell, con foco en procedimientos, documentación y reducción de riesgo.
+      Busco evolucionar hacia roles de Cybersecurity Analyst orientados a detección y respuesta.
+    </p>
+
+    <div class="btnrow">
+      <a class="btn" href="https://www.linkedin.com/in/miguel-de-la-rosa-de-la-morena-97800121a/" target="_blank" rel="noopener">Abrir LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- PRESENTACIÓN ORAL -->
+  <section id="oral">
+    <h2>Presentación oral académica/profesional</h2>
+    <p class="muted small">Incluye guion + (opcional) diapositivas/vídeo. Ideal: 2–3 minutos.</p>
+
+    <p><strong>Guion (estructura):</strong></p>
+    <ol>
+      <li><strong>Quién soy</strong> (15–20s): rol actual + especialidad.</li>
+      <li><strong>Qué aporto</strong> (60s): 2 logros/casos (sin datos sensibles, con impacto medible si puedes).</li>
+      <li><strong>Encaje con la oferta</strong> (45–60s): conecta con SOC/IR/forense, reporting, threat intel, vulnerabilidades.</li>
+      <li><strong>Cierre</strong> (10–15s): objetivo + disponibilidad.</li>
+    </ol>
+
+    <div class="btnrow">
+      <!-- Si subes slides como PDF o PPTX -->
+      <a class="btn" href="assets/Presentacion_oral.pdf" target="_blank" rel="noopener">Ver diapositivas (PDF)</a>
+      <!-- Si subes un video a YouTube/Drive, pega el link -->
+      <a class="btn" href="#" target="_blank" rel="noopener">Ver vídeo (opcional)</a>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section id="blog">
+    <h2>Entrada de blog divulgativo</h2>
+    <p class="muted small">Tema recomendado alineado con Cybersecurity Analyst: SOC, detección, respuesta e impacto en negocio.</p>
+
+    <h3>Del aviso al incidente: cómo decide un equipo de seguridad qué es ruido y qué es riesgo real</h3>
+    <p class="muted">[Fecha] · [Categoría]</p>
+
+    <p>
+      Un equipo de seguridad recibe alertas constantemente. Algunas son falsos positivos; otras indican un problema real.
+      En este artículo explico, de forma divulgativa, cómo se pasa de una alerta a un incidente: priorización, contexto,
+      evidencias y comunicación.
+    </p>
+
+    <h4>1) Qué es una alerta y por qué hay tantas</h4>
+    <p>[Contenido…]</p>
+
+    <h4>2) Triage: contexto, evidencias y decisión</h4>
+    <p>[Contenido…]</p>
+
+    <h4>3) Respuesta: contención, erradicación y recuperación</h4>
+    <p>[Contenido…]</p>
+
+    <h4>4) Lecciones aprendidas: procedimientos y mejora continua</h4>
+    <p>[Contenido…]</p>
+
+    <p class="small muted">Añade referencias si citas fuentes y evita datos sensibles de tu empresa.</p>
+  </section>
+
+  <!-- PERUSALL -->
+  <section id="perusall">
+    <h2>Trabajo en Perusall</h2>
+    <p class="muted small">Añade evidencias (capturas) y una breve reflexión: qué aprendiste y cómo lo aplicas a tu CV/presentación.</p>
+
+    <ul>
+      <li><strong>Evidencia 1:</strong> [captura / enlace]</li>
+      <li><strong>Evidencia 2:</strong> [captura / enlace]</li>
+      <li><strong>Reflexión (8–12 líneas):</strong> [texto…]</li>
+    </ul>
+  </section>
+
+  <!-- OFERTA -->
+  <section id="oferta">
+    <h2>Oferta de empleo elegida</h2>
+    <p class="muted small">
+      Incluye aquí la oferta (PDF o texto) y un mini análisis: requisitos clave + cómo encajas.
+    </p>
+
+    <p><strong>Puesto:</strong> Cybersecurity Analyst (100% remoto) — Page Personnel (Madrid)</p>
+
+    <div class="grid two">
+      <div>
+        <p class="muted"><strong>Requisitos clave (resumen):</strong></p>
+        <ul>
+          <li>Monitorización y análisis de eventos de seguridad</li>
+          <li>Políticas y procedimientos de ciberseguridad</li>
+          <li>Vulnerabilidades y pentesting</li>
+          <li>Gestión de incidentes + forense (logs/disco)</li>
+          <li>Threat intel + MITRE ATT&CK</li>
+          <li>Inglés alto</li>
+        </ul>
+      </div>
+      <div>
+        <p class="muted"><strong>Mi encaje (rellena con tu realidad):</strong></p>
+        <ul>
+          <li>Experiencia en seguridad corporativa y coordinación con TI.</li>
+          <li>Stack Microsoft (Azure/AD/Endpoint) + automatización con PowerShell.</li>
+          <li>Documentación, procedimientos e informes orientados a acción.</li>
+          <li>[Añade: SIEM/EDR/IR/forense si aplica.]</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="btnrow">
+      <a class="btn" href="assets/Oferta_Cybersecurity_Analyst.pdf" target="_blank" rel="noopener">Ver oferta (PDF)</a>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p class="muted">Actualiza con tus datos reales (ideal: email profesional).</p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:tuemail@dominio.com">tuemail@dominio.com</a></li>
+      <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/miguel-de-la-rosa-de-la-morena-97800121a/" target="_blank" rel="noopener">Perfil</a></li>
+      <li><strong>Ubicación:</strong> Madrid (disponible remoto/híbrido)</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© <span id="y"></span> Miguel de la Rosa · CV web para uso académico y profesional</p>
+  </footer>
+
+</main>
+
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
