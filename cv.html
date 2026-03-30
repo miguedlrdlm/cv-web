@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CV — Miguel de la Rosa</title>
+  <meta name="description" content="CV tradicional (versión web) de Miguel de la Rosa: experiencia, habilidades, certificaciones y formación." />
+  <style>
+    :root{--bg:#0b0f17;--card:#111827;--text:#e5e7eb;--muted:#9ca3af;--accent:#38bdf8;--border:#1f2937;}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Arial;background:linear-gradient(180deg,var(--bg),#06070b);color:var(--text);line-height:1.65}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    header{border-bottom:1px solid var(--border);background:rgba(11,15,23,.85);backdrop-filter: blur(10px);position:sticky;top:0;z-index:10}
+    .nav{max-width:980px;margin:0 auto;padding:14px 24px;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+    .brand strong{display:block;font-size:16px} .brand span{font-size:12px;color:var(--muted)}
+    .links{display:flex;gap:10px;flex-wrap:wrap}
+    .links a{font-size:13px;padding:8px 10px;border:1px solid var(--border);border-radius:10px;color:var(--text)}
+    .links a:hover{border-color:var(--accent)}
+    .container{max-width:980px;margin:0 auto;padding:24px}
+    .card{padding:22px;border:1px solid var(--border);border-radius:18px;background:rgba(17,24,39,.55)}
+    h1{margin:0 0 8px;font-size:24px}
+    h2{margin:18px 0 10px;font-size:18px}
+    .muted{color:var(--muted)}
+    .grid{display:grid;gap:14px}
+    @media (min-width: 860px){ .grid.two{grid-template-columns:1.1fr .9fr} }
+    ul{margin:8px 0 0 18px}
+    .pillrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+    .pill{font-size:12px;padding:6px 10px;border-radius:999px;border:1px solid var(--border);background:rgba(31,41,55,.35)}
+    .btnrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+    .btn{display:inline-block;padding:10px 12px;border-radius:12px;border:1px solid var(--border);background:rgba(31,41,55,.35);font-size:13px;color:var(--text)}
+    .btn:hover{border-color:var(--accent)}
+    .small{font-size:12px}
+    .sep{height:1px;background:var(--border);margin:16px 0}
+    footer{margin-top:18px;color:var(--muted);font-size:12px;text-align:center}
+  </style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <div class="brand">
+      <strong>Miguel de la Rosa</strong>
+      <span>CV tradicional · Seguridad de la Información</span>
+    </div>
+    <nav class="links" aria-label="Navegación">
+      <a href="index.html">Inicio</a>
+      <a href="carta.html">Carta</a>
+      <a href="linkedin.html">LinkedIn</a>
+      <a href="presentacion.html">Presentación</a>
+      <a href="blog.html">Blog</a>
+      <a href="perusall.html">Perusall</a>
+      <a href="oferta.html">Oferta</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <article class="card">
+    <h1>CV — Miguel de la Rosa</h1>
+    <p class="muted">
+      Versión web (resumen) + acceso al PDF. Enfocado a roles de <strong>Cybersecurity Analyst</strong>.
+    </p>
+
+    <div class="btnrow">
+      <!-- Sube tu PDF a /assets/ y asegúrate de que el nombre coincide -->
+      <a class="btn" href="assets/CV_Miguel_de_la_Rosa.pdf" target="_blank" rel="noopener">Descargar CV (PDF)</a>
+      <a class="btn" href="https://www.linkedin.com/in/miguel-de-la-rosa-de-la-morena-97800121a/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+
+    <div class="sep"></div>
+
+    <div class="grid two">
+      <!-- COLUMNA IZQUIERDA -->
+      <section>
+        <h2>Perfil profesional</h2>
+        <p>
+          Profesional de <strong>Seguridad de la Información</strong> con experiencia en entorno corporativo (Sener),
+          orientado a operaciones, mejora continua y documentación. Trabajo con stack Microsoft
+          (<strong>Azure</strong>, <strong>Active Directory</strong>, <strong>Endpoint</strong>) y automatización con
+          <strong>PowerShell</strong>. Interés en evolucionar hacia un rol de <strong>Cybersecurity Analyst</strong>
+          centrado en detección, respuesta y reducción de riesgo.
+        </p>
+
+        <div class="pillrow" aria-label="Áreas destacadas">
+          <span class="pill">Azure</span>
+          <span class="pill">Active Directory</span>
+          <span class="pill">Endpoint (MECM)</span>
+          <span class="pill">PowerShell</span>
+          <span class="pill">Seguridad de la información</span>
+          <span class="pill">Inglés</span>
+        </div>
+
+        <h2>Experiencia</h2>
+
+        <p><strong>Sener</strong> — Seguridad de la información (jornada completa, híbrido)</p>
+        <p class="muted small">ene. 2024 – actualidad · Madrid, Comunidad de Madrid, España</p>
+        <ul>
+          <li>Trabajo en el área de seguridad de la información en entorno corporativo.</li>
+          <li>Soporte y colaboración con equipos internos para mantener y mejorar controles de seguridad.</li>
+          <li>Participación en iniciativas relacionadas con entorno Microsoft (Azure / Active Directory / endpoint).</li>
+          <li>Automatización de tareas operativas con <strong>PowerShell</strong> y mantenimiento de documentación/procedimientos.</li>
+          <li>Elaboración de informes internos y seguimiento de acciones de mejora.</li>
+        </ul>
+        <p class="muted small">
+          <em>Nota:</em> sustituye/añade 2–3 logros concretos (sin datos sensibles) para que el CV tenga más impacto.
+        </p>
+
+        <div class="sep"></div>
+
+        <p><strong>Sener</strong> — Departamento de sistemas de la información (prácticas)</p>
+        <p class="muted small">oct. 2021 – may. 2024 · Madrid, Comunidad de Madrid, España</p>
+        <ul>
+          <li>Soporte en tareas de sistemas y seguridad en entorno corporativo.</li>
+          <li>Colaboración en administración/operación de servicios y herramientas en entorno Microsoft.</li>
+          <li>Documentación técnica y apoyo a proyectos internos.</li>
+        </ul>
+
+        <h2>Proyectos relevantes (opcional pero recomendado)</h2>
+        <p class="muted small">Añade 2–3 proyectos (laboratorio, scripting, hardening, etc.) con impacto.</p>
+        <ul>
+          <li><strong>[Proyecto]</strong> — [Qué hiciste] · [Herramientas] · [Resultado/impacto]</li>
+          <li><strong>[Proyecto]</strong> — [Qué hiciste] · [Herramientas] · [Resultado/impacto]</li>
+        </ul>
+      </section>
+
+      <!-- COLUMNA DERECHA -->
+      <aside>
+        <h2>Datos</h2>
+        <ul>
+          <li><strong>Ubicación:</strong> Madrid (disponible remoto/híbrido)</li>
+          <li><strong>Email:</strong> <a href="mailto:tuemail@dominio.com">tuemail@dominio.com</a></li>
+          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/miguel-de-la-rosa-de-la-morena-97800121a/" target="_blank" rel="noopener">Perfil</a></li>
+          <li><strong>GitHub:</strong> <a href="#" target="_blank" rel="noopener">[tu enlace]</a></li>
+        </ul>
+
+        <h2>Habilidades técnicas</h2>
+        <ul>
+          <li><strong>Cloud:</strong> Microsoft Azure</li>
+          <li><strong>Identidad:</strong> Active Directory</li>
+          <li><strong>Endpoint:</strong> Microsoft Endpoint Configuration Manager (MECM)</li>
+          <li><strong>Automatización:</strong> PowerShell</li>
+          <li><strong>Ofimática:</strong> Excel</li>
+        </ul>
+
+        <h2>Competencias</h2>
+        <ul>
+          <li>Capacidad de análisis</li>
+          <li>Resolución de problemas</li>
+          <li>Investigación</li>
+          <li>Liderazgo</li>
+          <li>Comunicación escrita (documentación e informes)</li>
+        </ul>
+
+        <h2>Certificaciones</h2>
+        <ul>
+          <li>Microsoft Certified: Security, Compliance, and Identity Fundamentals (SC-900) — jun. 2022</li>
+        </ul>
+
+        <h2>Formación</h2>
+        <ul>
+          <li>Universidad Politécnica de Madrid (UPM) — <span class="muted">[Grado / titulación]</span></li>
+        </ul>
+
+        <h2>Idiomas</h2>
+        <ul>
+          <li>Español: nativo</li>
+          <li>Inglés: <strong>[B2/C1]</strong></li>
+        </ul>
+
+        <div class="sep"></div>
+
+        <p class="small muted">
+          Consejo rápido: para “clavar” el rol de Cybersecurity Analyst, añade (solo si aplica) SIEM/EDR,
+          respuesta a incidentes, forense, MITRE ATT&CK y gestión de vulnerabilidades.
+        </p>
+      </aside>
+    </div>
+  </article>
+
+  <footer>© <span id="y"></span> Miguel de la Rosa</footer>
+</main>
+
+<script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
