@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Presentación oral — Miguel de la Rosa</title>
+  <meta name="description" content="Presentación oral académica/profesional: guion, estructura y recursos (diapositivas/vídeo) para el CV web." />
+  <style>
+    :root{--bg:#0b0f17;--card:#111827;--text:#e5e7eb;--muted:#9ca3af;--accent:#38bdf8;--border:#1f2937;}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Arial;background:linear-gradient(180deg,var(--bg),#06070b);color:var(--text);line-height:1.65}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    header{border-bottom:1px solid var(--border);background:rgba(11,15,23,.85);backdrop-filter: blur(10px);position:sticky;top:0;z-index:10}
+    .nav{max-width:980px;margin:0 auto;padding:14px 24px;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+    .brand strong{display:block;font-size:16px} .brand span{font-size:12px;color:var(--muted)}
+    .links{display:flex;gap:10px;flex-wrap:wrap}
+    .links a{font-size:13px;padding:8px 10px;border:1px solid var(--border);border-radius:10px;color:var(--text)}
+    .links a:hover{border-color:var(--accent)}
+    .container{max-width:980px;margin:0 auto;padding:24px}
+    .card{padding:22px;border:1px solid var(--border);border-radius:18px;background:rgba(17,24,39,.55)}
+    h1{margin:0 0 8px;font-size:24px}
+    h2{margin:18px 0 10px;font-size:18px}
+    h3{margin:14px 0 8px;font-size:16px}
+    .muted{color:var(--muted)}
+    .grid{display:grid;gap:14px}
+    @media (min-width: 860px){ .grid.two{grid-template-columns:1.15fr .85fr} }
+    .btnrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+    .btn{display:inline-block;padding:10px 12px;border-radius:12px;border:1px solid var(--border);background:rgba(31,41,55,.35);font-size:13px;color:var(--text)}
+    .btn:hover{border-color:var(--accent)}
+    ul,ol{margin:8px 0 0 18px}
+    .small{font-size:12px}
+    .sep{height:1px;background:var(--border);margin:16px 0}
+    .callout{border-left:3px solid var(--accent);padding:10px 12px;background:rgba(56,189,248,.08);border-radius:12px;margin-top:12px}
+    .kbd{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:12px}
+    footer{margin-top:18px;color:var(--muted);font-size:12px;text-align:center}
+  </style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <div class="brand">
+      <strong>Miguel de la Rosa</strong>
+      <span>Presentación oral · CV web</span>
+    </div>
+    <nav class="links" aria-label="Navegación">
+      <a href="index.html">Inicio</a>
+      <a href="carta.html">Carta</a>
+      <a href="cv.html">CV</a>
+      <a href="blog.html">Blog</a>
+      <a href="perusall.html">Perusall</a>
+      <a href="oferta.html">Oferta</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <article class="card">
+    <h1>Presentación oral académica/profesional</h1>
+    <p class="muted">
+      Guion listo para una presentación de <strong>2–3 minutos</strong>, orientada a la oferta de
+      <strong>Cybersecurity Analyst</strong> (operaciones, detección y respuesta), sin incluir información sensible.
+    </p>
+
+    <div class="btnrow">
+      <!-- Sube tus recursos a /assets/ y actualiza los nombres si cambian -->
+      <a class="btn" href="assets/Presentacion_oral.pdf" target="_blank" rel="noopener">Ver diapositivas (PDF)</a>
+      <a class="btn" href="#" target="_blank" rel="noopener">Ver vídeo (opcional)</a>
+      <a class="btn" href="oferta.html">Oferta objetivo</a>
+    </div>
+
+    <div class="sep"></div>
+
+    <div class="grid two">
+      <section>
+        <h2>Estructura recomendada (2–3 min)</h2>
+        <ol>
+          <li><strong>Quién soy</strong> (15–20s)</li>
+          <li><strong>Qué aporto</strong> (60–75s): 2 logros/casos</li>
+          <li><strong>Encaje con la oferta</strong> (45–60s)</li>
+          <li><strong>Cierre</strong> (10–15s)</li>
+        </ol>
+
+        <div class="callout small">
+          <strong>Tip:</strong> lo que más sube el nivel es meter <strong>evidencia</strong> (impacto medible).
+          Ejemplos de formato: <span class="kbd">“automaticé X y ahorré Y”</span>,
+          <span class="kbd">“mejoré Z reduciendo…”</span>.
+        </div>
+
+        <h2>Guion completo (texto para decir)</h2>
+
+        <h3>1) Quién soy (15–20s)</h3>
+        <p>
+          Hola, soy <strong>Miguel de la Rosa</strong>. Trabajo en el área de <strong>Seguridad de la Información</strong> en
+          un entorno corporativo, con foco en <strong>entorno Microsoft</strong>: Azure, Active Directory y seguridad en endpoint,
+          además de automatización con <strong>PowerShell</strong>.
+        </p>
+
+        <h3>2) Qué aporto (60–75s)</h3>
+        <p>
+          En mi día a día participo en iniciativas para mantener y mejorar la postura de seguridad:
+          coordinación con equipos de TI, documentación de procedimientos y automatización de tareas operativas.
+          Me gusta trabajar con método: definir el problema, recopilar evidencias, documentar y proponer mejoras accionables.
+        </p>
+        <p class="muted small">
+          Aquí añade 2 logros reales (sin datos sensibles). Por ejemplo:
+        </p>
+        <ul class="small">
+          <li><strong>Logro 1:</strong> [Qué hiciste] → [Herramienta] → [Impacto/resultado]</li>
+          <li><strong>Logro 2:</strong> [Qué hiciste] → [Herramienta] → [Impacto/resultado]</li>
+        </ul>
+
+        <h3>3) Encaje con la oferta (45–60s)</h3>
+        <p>
+          Me interesa especialmente el puesto de <strong>Cybersecurity Analyst</strong> porque quiero orientar mi carrera
+          a operaciones: detección, análisis y respuesta. Mi experiencia en entornos Microsoft, junto con automatización
+          y trabajo con procedimientos, me permite aportar valor en monitorización, triage y documentación de incidentes,
+          además de colaborar con otros equipos para aplicar medidas correctivas.
+        </p>
+        <p class="muted small">
+          Si aplica en tu caso, añade aquí (solo lo que sea cierto): SIEM/EDR, respuesta a incidentes, análisis de logs,
+          gestión de vulnerabilidades, MITRE ATT&CK.
+        </p>
+
+        <h3>4) Cierre (10–15s)</h3>
+        <p>
+          En resumen, aporto experiencia real en seguridad corporativa, enfoque metódico y capacidad de automatización.
+          Estoy disponible para incorporarme en un rol de Cybersecurity Analyst y seguir creciendo en un equipo con
+          procedimientos y foco en reducción de riesgo. Gracias.
+        </p>
+      </section>
+
+      <aside>
+        <h2>Checklist (para que “suene pro”)</h2>
+        <ul>
+          <li>Duración total 2–3 min (ensaya con cronómetro).</li>
+          <li>Hablas claro y en frases cortas (sin tecnicismos innecesarios).</li>
+          <li>Mencionas 6–10 keywords del puesto (solo reales).</li>
+          <li>Incluyes 2 logros con impacto (medible si puedes).</li>
+          <li>No usas datos sensibles de la empresa.</li>
+        </ul>
+
+        <h2>Palabras clave sugeridas</h2>
+        <p class="muted small">Usa las que sean defendibles en entrevista.</p>
+        <ul class="small">
+          <li>Operaciones de seguridad / SOC (conceptual)</li>
+          <li>Monitorización / análisis de eventos</li>
+          <li>Respuesta a incidentes (IR)</li>
+          <li>Análisis de logs / evidencias</li>
+          <li>Procedimientos / documentación / reporting</li>
+          <li>Azure / Active Directory / Endpoint</li>
+          <li>Automatización (PowerShell)</li>
+          <li>Gestión de vulnerabilidades (si aplica)</li>
+          <li>Inglés alto (si aplica)</li>
+        </ul>
+
+        <h2>Recursos</h2>
+        <ul class="small">
+          <li><strong>Diapositivas:</strong> <span class="kbd">assets/Presentacion_oral.pdf</span></li>
+          <li><strong>Vídeo (opcional):</strong> pega enlace (YouTube/Drive) en el botón superior.</li>
+        </ul>
+
+        <div class="callout small">
+          <strong>Pro tip:</strong> si grabas vídeo, mira a cámara y usa una estructura de 4 bloques (como arriba).
+          Eso mejora mucho la impresión profesional.
+        </div>
+      </aside>
+    </div>
+  </article>
+
+  <footer>© <span id="y"></span> Miguel de la Rosa</footer>
+</main>
+
+<script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
