@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CV — Miguel de la Rosa</title>
-  <meta name="description" content="CV tradicional (versión web) de Miguel de la Rosa: experiencia, habilidades, certificaciones y formación." />
+  <meta name="description" content="CV web de Miguel de la Rosa: experiencia, formación, certificaciones y competencias en ciberseguridad." />
   <style>
     :root{--bg:#0b0f17;--card:#111827;--text:#e5e7eb;--muted:#9ca3af;--accent:#38bdf8;--border:#1f2937;}
     *{box-sizing:border-box}
@@ -18,19 +18,24 @@
     .links a:hover{border-color:var(--accent)}
     .container{max-width:980px;margin:0 auto;padding:24px}
     .card{padding:22px;border:1px solid var(--border);border-radius:18px;background:rgba(17,24,39,.55)}
-    h1{margin:0 0 8px;font-size:24px}
+    .hero{padding:22px;border:1px solid var(--border);border-radius:18px;background:rgba(17,24,39,.65)}
+    h1{margin:0 0 6px;font-size:28px}
     h2{margin:18px 0 10px;font-size:18px}
     .muted{color:var(--muted)}
     .grid{display:grid;gap:14px}
-    @media (min-width: 860px){ .grid.two{grid-template-columns:1.1fr .9fr} }
+    @media (min-width: 900px){ .grid.two{grid-template-columns:1.12fr .88fr} }
     ul{margin:8px 0 0 18px}
-    .pillrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
-    .pill{font-size:12px;padding:6px 10px;border-radius:999px;border:1px solid var(--border);background:rgba(31,41,55,.35)}
     .btnrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
     .btn{display:inline-block;padding:10px 12px;border-radius:12px;border:1px solid var(--border);background:rgba(31,41,55,.35);font-size:13px;color:var(--text)}
     .btn:hover{border-color:var(--accent)}
+    .pillrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+    .pill{font-size:12px;padding:6px 10px;border-radius:999px;border:1px solid var(--border);background:rgba(31,41,55,.35)}
     .small{font-size:12px}
     .sep{height:1px;background:var(--border);margin:16px 0}
+    .item{margin-top:10px}
+    .item .top{display:flex;flex-wrap:wrap;gap:8px;align-items:baseline;justify-content:space-between}
+    .item .top strong{font-size:14px}
+    .item .meta{color:var(--muted);font-size:12px;margin-top:2px}
     footer{margin-top:18px;color:var(--muted);font-size:12px;text-align:center}
   </style>
 </head>
@@ -38,13 +43,12 @@
 <header>
   <div class="nav">
     <div class="brand">
-      <strong>Miguel de la Rosa</strong>
-      <span>CV tradicional · Seguridad de la Información</span>
+      <strong>Miguel de la Rosa de la Morena</strong>
+      <span>CV web · Analista de Ciberseguridad</span>
     </div>
     <nav class="links" aria-label="Navegación">
       <a href="index.html">Inicio</a>
       <a href="carta.html">Carta</a>
-      <a href="linkedin.html">LinkedIn</a>
       <a href="presentacion.html">Presentación</a>
       <a href="blog.html">Blog</a>
       <a href="perusall.html">Perusall</a>
@@ -55,124 +59,116 @@
 </header>
 
 <main class="container">
-  <article class="card">
-    <h1>CV — Miguel de la Rosa</h1>
-    <p class="muted">
-      Versión web (resumen) + acceso al PDF. Enfocado a roles de <strong>Cybersecurity Analyst</strong>.
+
+  <!-- CABECERA CV -->
+  <section class="hero">
+    <h1>Miguel de la Rosa de la Morena</h1>
+    <p class="muted" style="margin:0">
+      <strong>Analista de Ciberseguridad</strong> · Seguridad Microsoft · Gestión de vulnerabilidades · Respuesta ante incidentes
+    </p>
+    <p class="muted small" style="margin:8px 0 0">
+      Madrid, España · +34 680 143 487 ·
+      <a href="mailto:miguel.dlr.dlm@gmail.com">miguel.dlr.dlm@gmail.com</a> ·
+      <a href="https://www.linkedin.com/in/miguel-de-la-rosa-de-la-morena-97800121a/" target="_blank" rel="noopener">LinkedIn</a>
     </p>
 
     <div class="btnrow">
-      <!-- Sube tu PDF a /assets/ y asegúrate de que el nombre coincide -->
+      <!-- Sube tu PDF a /assets/ con este nombre -->
       <a class="btn" href="assets/CV_Miguel_de_la_Rosa.pdf" target="_blank" rel="noopener">Descargar CV (PDF)</a>
-      <a class="btn" href="https://www.linkedin.com/in/miguel-de-la-rosa-de-la-morena-97800121a/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
 
-    <div class="sep"></div>
+    <div class="pillrow" aria-label="Stack principal">
+      <span class="pill">Defender XDR</span>
+      <span class="pill">Sentinel</span>
+      <span class="pill">Intune</span>
+      <span class="pill">Azure</span>
+      <span class="pill">Entra ID</span>
+      <span class="pill">Purview / DLP</span>
+      <span class="pill">FortiGate</span>
+      <span class="pill">KQL</span>
+    </div>
+  </section>
 
+  <article class="card" style="margin-top:16px">
     <div class="grid two">
-      <!-- COLUMNA IZQUIERDA -->
+      <!-- IZQ: PERFIL + EXPERIENCIA -->
       <section>
         <h2>Perfil profesional</h2>
         <p>
-          Profesional de <strong>Seguridad de la Información</strong> con experiencia en entorno corporativo (Sener),
-          orientado a operaciones, mejora continua y documentación. Trabajo con stack Microsoft
-          (<strong>Azure</strong>, <strong>Active Directory</strong>, <strong>Endpoint</strong>) y automatización con
-          <strong>PowerShell</strong>. Interés en evolucionar hacia un rol de <strong>Cybersecurity Analyst</strong>
-          centrado en detección, respuesta y reducción de riesgo.
+          Técnico en ciberseguridad con cuatro años de experiencia en una empresa del sector tecnológico, especializado en seguridad
+          Microsoft, protección de equipos corporativos, correo electrónico, gestión de vulnerabilidades y análisis de eventos.
+          He trabajado con Microsoft Defender, Intune, Azure, Entra ID y Purview en la configuración y mejora de políticas de seguridad,
+          así como en respuesta ante incidentes y protección de información corporativa. Actualmente curso el Grado en Ingeniería Informática
+          en la Universidad Politécnica de Madrid y busco evolucionar hacia posiciones de Analista de Ciberseguridad.
         </p>
 
-        <div class="pillrow" aria-label="Áreas destacadas">
-          <span class="pill">Azure</span>
-          <span class="pill">Active Directory</span>
-          <span class="pill">Endpoint (MECM)</span>
-          <span class="pill">PowerShell</span>
-          <span class="pill">Seguridad de la información</span>
-          <span class="pill">Inglés</span>
+        <h2>Experiencia profesional</h2>
+
+        <div class="item">
+          <div class="top">
+            <strong>Técnico en ciberseguridad · Sener</strong>
+            <span class="meta">oct. 2021 – actualidad · Madrid, España</span>
+          </div>
+          <ul>
+            <li><strong>Microsoft Defender XDR / Defender for Office 365 / Defender for Endpoint:</strong> configuré políticas de seguridad para correo electrónico, cuarentena y protección de equipos; revisé alertas, eventos y recomendaciones de seguridad.</li>
+            <li><strong>Microsoft Intune / Endpoint Security:</strong> gestioné reglas de firewall de Windows, cifrado de disco, acceso condicional y reglas de reducción de superficie de ataque; apliqué una línea base de seguridad para el bastionado basada en recomendaciones de Microsoft.</li>
+            <li><strong>Microsoft Sentinel / Defender for Cloud / Azure:</strong> participé en tareas de monitorización, análisis de logs, revisión de eventos de seguridad, gestión de vulnerabilidades y mejora de la postura de seguridad en la nube.</li>
+            <li><strong>Microsoft Purview / DLP:</strong> desplegué políticas de prevención de pérdida de datos y etiquetado de información.</li>
+            <li><strong>Microsoft Entra ID:</strong> gestioné usuarios, grupos y configuraciones relacionadas con identidad y acceso.</li>
+            <li><strong>Fortinet / FortiGate:</strong> desplegué controles de seguridad en firewalls FortiGate.</li>
+          </ul>
         </div>
+      </section>
 
-        <h2>Experiencia</h2>
-
-        <p><strong>Sener</strong> — Seguridad de la información (jornada completa, híbrido)</p>
-        <p class="muted small">ene. 2024 – actualidad · Madrid, Comunidad de Madrid, España</p>
-        <ul>
-          <li>Trabajo en el área de seguridad de la información en entorno corporativo.</li>
-          <li>Soporte y colaboración con equipos internos para mantener y mejorar controles de seguridad.</li>
-          <li>Participación en iniciativas relacionadas con entorno Microsoft (Azure / Active Directory / endpoint).</li>
-          <li>Automatización de tareas operativas con <strong>PowerShell</strong> y mantenimiento de documentación/procedimientos.</li>
-          <li>Elaboración de informes internos y seguimiento de acciones de mejora.</li>
-        </ul>
-        <p class="muted small">
-          <em>Nota:</em> sustituye/añade 2–3 logros concretos (sin datos sensibles) para que el CV tenga más impacto.
-        </p>
+      <!-- DCHA: FORMACIÓN + CERTS + SKILLS -->
+      <aside>
+        <h2>Formación académica</h2>
+        <div class="item">
+          <div class="top">
+            <strong>Grado en Ingeniería Informática · UPM</strong>
+            <span class="meta">En curso (último año)</span>
+          </div>
+          <p class="muted small" style="margin:6px 0 0">
+            Formación orientada al desarrollo de competencias técnicas, análisis de problemas y comunicación profesional en contextos tecnológicos.
+          </p>
+        </div>
 
         <div class="sep"></div>
 
-        <p><strong>Sener</strong> — Departamento de sistemas de la información (prácticas)</p>
-        <p class="muted small">oct. 2021 – may. 2024 · Madrid, Comunidad de Madrid, España</p>
+        <h2>Certificaciones y formación</h2>
         <ul>
-          <li>Soporte en tareas de sistemas y seguridad en entorno corporativo.</li>
-          <li>Colaboración en administración/operación de servicios y herramientas en entorno Microsoft.</li>
-          <li>Documentación técnica y apoyo a proyectos internos.</li>
+          <li><strong>Microsoft SC-900</strong>: Security, Compliance, and Identity Fundamentals | 2022</li>
+          <li><strong>Formación AZ-500</strong>: Microsoft Azure Security Technologies | <span class="muted">En preparación</span></li>
+          <li><strong>Formación en ENS</strong> | CCN-CERT y AEC | 2024</li>
+          <li><strong>Curso de Seguridad de la Información</strong> | Intalentia | 2022</li>
         </ul>
 
-        <h2>Proyectos relevantes (opcional pero recomendado)</h2>
-        <p class="muted small">Añade 2–3 proyectos (laboratorio, scripting, hardening, etc.) con impacto.</p>
-        <ul>
-          <li><strong>[Proyecto]</strong> — [Qué hiciste] · [Herramientas] · [Resultado/impacto]</li>
-          <li><strong>[Proyecto]</strong> — [Qué hiciste] · [Herramientas] · [Resultado/impacto]</li>
-        </ul>
-      </section>
+        <div class="sep"></div>
 
-      <!-- COLUMNA DERECHA -->
-      <aside>
-        <h2>Datos</h2>
+        <h2>Competencias técnicas</h2>
         <ul>
-          <li><strong>Ubicación:</strong> Madrid (disponible remoto/híbrido)</li>
-          <li><strong>Email:</strong> <a href="mailto:tuemail@dominio.com">tuemail@dominio.com</a></li>
-          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/miguel-de-la-rosa-de-la-morena-97800121a/" target="_blank" rel="noopener">Perfil</a></li>
-          <li><strong>GitHub:</strong> <a href="#" target="_blank" rel="noopener">[tu enlace]</a></li>
+          <li><strong>Seguridad Microsoft:</strong> Defender XDR, Defender for Endpoint, Defender for Office 365, Sentinel, Intune, Azure, Defender for Cloud, Entra ID, Purview.</li>
+          <li><strong>Ciberseguridad defensiva:</strong> análisis de logs, monitorización de eventos, respuesta ante incidentes, gestión de vulnerabilidades, SIEM, KQL, Advanced Hunting.</li>
+          <li><strong>Infraestructura y sistemas:</strong> Fortinet/FortiGate, PowerShell, Windows Server, Active Directory, políticas de firewall, cifrado de disco y seguridad de equipos.</li>
+          <li><strong>Cumplimiento y marcos:</strong> ENS, ISO 27001 y MITRE ATT&CK.</li>
         </ul>
 
-        <h2>Habilidades técnicas</h2>
-        <ul>
-          <li><strong>Cloud:</strong> Microsoft Azure</li>
-          <li><strong>Identidad:</strong> Active Directory</li>
-          <li><strong>Endpoint:</strong> Microsoft Endpoint Configuration Manager (MECM)</li>
-          <li><strong>Automatización:</strong> PowerShell</li>
-          <li><strong>Ofimática:</strong> Excel</li>
-        </ul>
-
-        <h2>Competencias</h2>
-        <ul>
-          <li>Capacidad de análisis</li>
-          <li>Resolución de problemas</li>
-          <li>Investigación</li>
-          <li>Liderazgo</li>
-          <li>Comunicación escrita (documentación e informes)</li>
-        </ul>
-
-        <h2>Certificaciones</h2>
-        <ul>
-          <li>Microsoft Certified: Security, Compliance, and Identity Fundamentals (SC-900) — jun. 2022</li>
-        </ul>
-
-        <h2>Formación</h2>
-        <ul>
-          <li>Universidad Politécnica de Madrid (UPM) — <span class="muted">[Grado / titulación]</span></li>
-        </ul>
+        <div class="sep"></div>
 
         <h2>Idiomas</h2>
         <ul>
           <li>Español: nativo</li>
-          <li>Inglés: <strong>[B2/C1]</strong></li>
+          <li>Inglés: B2</li>
         </ul>
 
-        <div class="sep"></div>
-
-        <p class="small muted">
-          Consejo rápido: para “clavar” el rol de Cybersecurity Analyst, añade (solo si aplica) SIEM/EDR,
-          respuesta a incidentes, forense, MITRE ATT&CK y gestión de vulnerabilidades.
-        </p>
+        <h2>Competencias profesionales</h2>
+        <ul>
+          <li>Comunicación con equipos técnicos y no técnicos</li>
+          <li>Análisis y resolución de problemas</li>
+          <li>Trabajo en equipo</li>
+          <li>Aprendizaje continuo</li>
+          <li>Gestión de incidencias</li>
+        </ul>
       </aside>
     </div>
   </article>
