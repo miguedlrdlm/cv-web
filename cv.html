@@ -22,8 +22,19 @@
     h1{margin:0 0 6px;font-size:28px}
     h2{margin:18px 0 10px;font-size:18px}
     .muted{color:var(--muted)}
-    .grid{display:grid;gap:14px}
+    .grid{display:grid;gap:22px} /* ✅ más separación general */
     @media (min-width: 900px){ .grid.two{grid-template-columns:1.12fr .88fr} }
+    /* ✅ separación extra + línea vertical entre columnas (solo desktop) */
+    @media (min-width: 900px){
+      .grid.two{
+        column-gap: 34px;
+        align-items: start;
+      }
+      .grid.two > aside{
+        border-left: 1px solid var(--border);
+        padding-left: 22px;
+      }
+    }
     ul{margin:8px 0 0 18px}
     .btnrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
     .btn{display:inline-block;padding:10px 12px;border-radius:12px;border:1px solid var(--border);background:rgba(31,41,55,.35);font-size:13px;color:var(--text)}
@@ -128,6 +139,7 @@
             <strong>Grado en Ingeniería Informática · UPM</strong>
             <span class="meta">En curso (último año)</span>
           </div>
+          <!-- ✅ ya NO es muted small -->
           <p style="margin:6px 0 0">
             Formación orientada al desarrollo de competencias técnicas, análisis de problemas y comunicación profesional en contextos tecnológicos.
           </p>
