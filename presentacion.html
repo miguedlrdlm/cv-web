@@ -1,176 +1,330 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Presentación oral — Miguel de la Rosa</title>
-  <meta name="description" content="Presentación oral académica/profesional: guion, estructura y recursos (diapositivas/vídeo) para el CV web." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Presentación profesional | Miguel de la Rosa</title>
+
   <style>
-    :root{--bg:#0b0f17;--card:#111827;--text:#e5e7eb;--muted:#9ca3af;--accent:#38bdf8;--border:#1f2937;}
-    *{box-sizing:border-box}
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Arial;background:linear-gradient(180deg,var(--bg),#06070b);color:var(--text);line-height:1.65}
-    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
-    header{border-bottom:1px solid var(--border);background:rgba(11,15,23,.85);backdrop-filter: blur(10px);position:sticky;top:0;z-index:10}
-    .nav{max-width:980px;margin:0 auto;padding:14px 24px;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
-    .brand strong{display:block;font-size:16px} .brand span{font-size:12px;color:var(--muted)}
-    .links{display:flex;gap:10px;flex-wrap:wrap}
-    .links a{font-size:13px;padding:8px 10px;border:1px solid var(--border);border-radius:10px;color:var(--text)}
-    .links a:hover{border-color:var(--accent)}
-    .container{max-width:980px;margin:0 auto;padding:24px}
-    .card{padding:22px;border:1px solid var(--border);border-radius:18px;background:rgba(17,24,39,.55)}
-    h1{margin:0 0 8px;font-size:24px}
-    h2{margin:18px 0 10px;font-size:18px}
-    h3{margin:14px 0 8px;font-size:16px}
-    .muted{color:var(--muted)}
-    .grid{display:grid;gap:14px}
-    @media (min-width: 860px){ .grid.two{grid-template-columns:1.15fr .85fr} }
-    .btnrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
-    .btn{display:inline-block;padding:10px 12px;border-radius:12px;border:1px solid var(--border);background:rgba(31,41,55,.35);font-size:13px;color:var(--text)}
-    .btn:hover{border-color:var(--accent)}
-    ul,ol{margin:8px 0 0 18px}
-    .small{font-size:12px}
-    .sep{height:1px;background:var(--border);margin:16px 0}
-    .callout{border-left:3px solid var(--accent);padding:10px 12px;background:rgba(56,189,248,.08);border-radius:12px;margin-top:12px}
-    .kbd{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:12px}
-    footer{margin-top:18px;color:var(--muted);font-size:12px;text-align:center}
+    :root {
+      --color-principal: #0f172a;
+      --color-secundario: #1e293b;
+      --color-acento: #2563eb;
+      --color-fondo: #f8fafc;
+      --color-texto: #334155;
+      --color-blanco: #ffffff;
+      --color-borde: #e2e8f0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: var(--color-fondo);
+      color: var(--color-texto);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--color-principal), var(--color-secundario));
+      color: var(--color-blanco);
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      margin-bottom: 12px;
+    }
+
+    header p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      color: #dbeafe;
+    }
+
+    nav {
+      background-color: var(--color-blanco);
+      border-bottom: 1px solid var(--color-borde);
+      padding: 14px 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: var(--color-principal);
+      text-decoration: none;
+      font-weight: 600;
+      margin: 0 12px;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      color: var(--color-acento);
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 50px 20px;
+    }
+
+    section {
+      background-color: var(--color-blanco);
+      border: 1px solid var(--color-borde);
+      border-radius: 18px;
+      padding: 35px;
+      margin-bottom: 35px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+    }
+
+    section h2 {
+      color: var(--color-principal);
+      font-size: 1.7rem;
+      margin-bottom: 18px;
+    }
+
+    section h3 {
+      color: var(--color-principal);
+      font-size: 1.25rem;
+      margin-top: 24px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 16px;
+    }
+
+    .intro {
+      font-size: 1.08rem;
+    }
+
+    .video-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      height: 0;
+      border-radius: 16px;
+      overflow: hidden;
+      background: #000;
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+      margin-top: 25px;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 25px;
+    }
+
+    .info-card {
+      background-color: #f8fafc;
+      border: 1px solid var(--color-borde);
+      border-radius: 14px;
+      padding: 20px;
+    }
+
+    .info-card h3 {
+      margin-top: 0;
+      font-size: 1.05rem;
+      color: var(--color-acento);
+    }
+
+    .info-card p {
+      font-size: 0.95rem;
+      margin-bottom: 0;
+    }
+
+    ul {
+      margin-left: 22px;
+      margin-top: 10px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .volver {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 18px;
+      background-color: var(--color-acento);
+      color: var(--color-blanco);
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: 600;
+    }
+
+    .volver:hover {
+      background-color: #1d4ed8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: #64748b;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.9rem;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 6px 8px;
+      }
+
+      main {
+        padding: 30px 15px;
+      }
+
+      section {
+        padding: 25px;
+      }
+
+      .info-grid {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
+
 <body>
-<header>
-  <div class="nav">
-    <div class="brand">
-      <strong>Miguel de la Rosa</strong>
-      <span>Presentación oral · CV web</span>
-    </div>
-    <nav class="links" aria-label="Navegación">
-      <a href="index.html">Inicio</a>
-      <a href="carta.html">Carta</a>
-      <a href="cv.html">CV</a>
-      <a href="blog.html">Blog</a>
-      <a href="perusall.html">Perusall</a>
-      <a href="oferta.html">Oferta</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
-  </div>
-</header>
 
-<main class="container">
-  <article class="card">
-    <h1>Presentación oral académica/profesional</h1>
-    <p class="muted">
-      Guion listo para una presentación de <strong>2–3 minutos</strong>, orientada a la oferta de
-      <strong>Cybersecurity Analyst</strong> (operaciones, detección y respuesta), sin incluir información sensible.
+  <header>
+    <h1>Presentación profesional</h1>
+    <p>
+      Cómo reducir el riesgo de phishing mediante un programa de concienciación en ciberseguridad.
     </p>
+  </header>
 
-    <div class="btnrow">
-      <!-- Sube tus recursos a /assets/ y actualiza los nombres si cambian -->
-      <a class="btn" href="assets/Presentacion_oral.pdf" target="_blank" rel="noopener">Ver diapositivas (PDF)</a>
-      <a class="btn" href="#" target="_blank" rel="noopener">Ver vídeo (opcional)</a>
-      <a class="btn" href="oferta.html">Oferta objetivo</a>
-    </div>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="cv.html">CV</a>
+    <a href="presentacion.html">Presentación</a>
+    <a href="blog.html">Blog</a>
+    <a href="linkedin.html">LinkedIn</a>
+  </nav>
 
-    <div class="sep"></div>
+  <main>
 
-    <div class="grid two">
-      <section>
-        <h2>Estructura recomendada (2–3 min)</h2>
-        <ol>
-          <li><strong>Quién soy</strong> (15–20s)</li>
-          <li><strong>Qué aporto</strong> (60–75s): 2 logros/casos</li>
-          <li><strong>Encaje con la oferta</strong> (45–60s)</li>
-          <li><strong>Cierre</strong> (10–15s)</li>
-        </ol>
+    <section>
+      <h2>Vídeo de la presentación</h2>
 
-        <div class="callout small">
-          <strong>Tip:</strong> lo que más sube el nivel es meter <strong>evidencia</strong> (impacto medible).
-          Ejemplos de formato: <span class="kbd">“automaticé X y ahorré Y”</span>,
-          <span class="kbd">“mejoré Z reduciendo…”</span>.
+      <p class="intro">
+        En esta presentación explico la importancia de la concienciación en ciberseguridad dentro de las empresas y cómo los empleados pueden actuar como un verdadero <strong>firewall humano</strong> frente a amenazas como el phishing.
+      </p>
+
+      <p>
+        El objetivo es presentar una propuesta profesional, clara y aplicable a un entorno empresarial, conectando el problema actual de los ataques dirigidos a empleados con posibles medidas de prevención, formación y mejora continua.
+      </p>
+
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/9AcwDee_cIo"
+          title="Presentación profesional - Concienciación en ciberseguridad"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <section>
+      <h2>Resumen de la presentación</h2>
+
+      <p>
+        La presentación parte de una idea principal: en muchas organizaciones, la seguridad no depende únicamente de las herramientas técnicas, sino también del comportamiento diario de las personas. Los ataques de phishing aprovechan errores humanos, falta de atención o desconocimiento de señales de riesgo.
+      </p>
+
+      <p>
+        Por ello, se propone reforzar la formación de los empleados mediante programas de concienciación, simulaciones de phishing, comunicación interna clara y medición de resultados. El objetivo no es culpar al usuario, sino convertirlo en una primera línea de defensa más preparada.
+      </p>
+
+      <div class="info-grid">
+        <div class="info-card">
+          <h3>Problema</h3>
+          <p>
+            Los ataques de phishing siguen siendo una de las principales vías de entrada para comprometer cuentas, datos y sistemas corporativos.
+          </p>
         </div>
 
-        <h2>Guion completo (texto para decir)</h2>
-
-        <h3>1) Quién soy (15–20s)</h3>
-        <p>
-          Hola, soy <strong>Miguel de la Rosa</strong>. Trabajo en el área de <strong>Seguridad de la Información</strong> en
-          un entorno corporativo, con foco en <strong>entorno Microsoft</strong>: Azure, Active Directory y seguridad en endpoint,
-          además de automatización con <strong>PowerShell</strong>.
-        </p>
-
-        <h3>2) Qué aporto (60–75s)</h3>
-        <p>
-          En mi día a día participo en iniciativas para mantener y mejorar la postura de seguridad:
-          coordinación con equipos de TI, documentación de procedimientos y automatización de tareas operativas.
-          Me gusta trabajar con método: definir el problema, recopilar evidencias, documentar y proponer mejoras accionables.
-        </p>
-        <p class="muted small">
-          Aquí añade 2 logros reales (sin datos sensibles). Por ejemplo:
-        </p>
-        <ul class="small">
-          <li><strong>Logro 1:</strong> [Qué hiciste] → [Herramienta] → [Impacto/resultado]</li>
-          <li><strong>Logro 2:</strong> [Qué hiciste] → [Herramienta] → [Impacto/resultado]</li>
-        </ul>
-
-        <h3>3) Encaje con la oferta (45–60s)</h3>
-        <p>
-          Me interesa especialmente el puesto de <strong>Cybersecurity Analyst</strong> porque quiero orientar mi carrera
-          a operaciones: detección, análisis y respuesta. Mi experiencia en entornos Microsoft, junto con automatización
-          y trabajo con procedimientos, me permite aportar valor en monitorización, triage y documentación de incidentes,
-          además de colaborar con otros equipos para aplicar medidas correctivas.
-        </p>
-        <p class="muted small">
-          Si aplica en tu caso, añade aquí (solo lo que sea cierto): SIEM/EDR, respuesta a incidentes, análisis de logs,
-          gestión de vulnerabilidades, MITRE ATT&CK.
-        </p>
-
-        <h3>4) Cierre (10–15s)</h3>
-        <p>
-          En resumen, aporto experiencia real en seguridad corporativa, enfoque metódico y capacidad de automatización.
-          Estoy disponible para incorporarme en un rol de Cybersecurity Analyst y seguir creciendo en un equipo con
-          procedimientos y foco en reducción de riesgo. Gracias.
-        </p>
-      </section>
-
-      <aside>
-        <h2>Checklist (para que “suene pro”)</h2>
-        <ul>
-          <li>Duración total 2–3 min (ensaya con cronómetro).</li>
-          <li>Hablas claro y en frases cortas (sin tecnicismos innecesarios).</li>
-          <li>Mencionas 6–10 keywords del puesto (solo reales).</li>
-          <li>Incluyes 2 logros con impacto (medible si puedes).</li>
-          <li>No usas datos sensibles de la empresa.</li>
-        </ul>
-
-        <h2>Palabras clave sugeridas</h2>
-        <p class="muted small">Usa las que sean defendibles en entrevista.</p>
-        <ul class="small">
-          <li>Operaciones de seguridad / SOC (conceptual)</li>
-          <li>Monitorización / análisis de eventos</li>
-          <li>Respuesta a incidentes (IR)</li>
-          <li>Análisis de logs / evidencias</li>
-          <li>Procedimientos / documentación / reporting</li>
-          <li>Azure / Active Directory / Endpoint</li>
-          <li>Automatización (PowerShell)</li>
-          <li>Gestión de vulnerabilidades (si aplica)</li>
-          <li>Inglés alto (si aplica)</li>
-        </ul>
-
-        <h2>Recursos</h2>
-        <ul class="small">
-          <li><strong>Diapositivas:</strong> <span class="kbd">assets/Presentacion_oral.pdf</span></li>
-          <li><strong>Vídeo (opcional):</strong> pega enlace (YouTube/Drive) en el botón superior.</li>
-        </ul>
-
-        <div class="callout small">
-          <strong>Pro tip:</strong> si grabas vídeo, mira a cámara y usa una estructura de 4 bloques (como arriba).
-          Eso mejora mucho la impresión profesional.
+        <div class="info-card">
+          <h3>Propuesta</h3>
+          <p>
+            Crear un programa de concienciación continuo, práctico y medible, adaptado al nivel de los empleados.
+          </p>
         </div>
-      </aside>
-    </div>
-  </article>
 
-  <footer>© <span id="y"></span> Miguel de la Rosa</footer>
-</main>
+        <div class="info-card">
+          <h3>Resultado esperado</h3>
+          <p>
+            Reducir clics en enlaces maliciosos, mejorar la detección temprana y aumentar la cultura de seguridad.
+          </p>
+        </div>
+      </div>
+    </section>
 
-<script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+    <section>
+      <h2>Ideas clave</h2>
+
+      <ul>
+        <li>
+          La ciberseguridad no es solo una cuestión técnica: también depende de las personas.
+        </li>
+        <li>
+          El phishing busca explotar la confianza, la urgencia y la falta de formación del usuario.
+        </li>
+        <li>
+          Un programa de concienciación debe ser continuo, no una acción aislada.
+        </li>
+        <li>
+          Las simulaciones de phishing ayudan a medir el nivel de riesgo y la evolución de los empleados.
+        </li>
+        <li>
+          El objetivo es crear una cultura de seguridad realista, útil y alineada con el trabajo diario.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Relación con mi perfil profesional</h2>
+
+      <p>
+        Esta presentación está conectada con mi perfil orientado a la ciberseguridad, especialmente en áreas como la protección del correo electrónico, la respuesta ante incidentes, la gestión de vulnerabilidades y la mejora de políticas de seguridad en entornos corporativos.
+      </p>
+
+      <p>
+        Además, refleja mi interés por una ciberseguridad práctica, donde la tecnología, los procesos y las personas trabajen de forma coordinada para reducir el riesgo real de una organización.
+      </p>
+
+      <a class="volver" href="index.html">Volver al inicio</a>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Portfolio profesional y académico · Miguel de la Rosa</p>
+  </footer>
+
 </body>
 </html>
