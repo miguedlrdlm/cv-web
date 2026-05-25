@@ -1,144 +1,97 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Miguel de la Rosa — CV Web (Ciberseguridad)</title>
-  <meta name="description" content="Portfolio/CV web: carta, CV, LinkedIn, presentación oral, blog, Perusall y oferta objetivo." />
-  <style>
-    :root{
-      --bg:#0b0f17; --card:#111827; --text:#e5e7eb; --muted:#9ca3af;
-      --accent:#38bdf8; --border:#1f2937;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Arial;
-      background:linear-gradient(180deg,var(--bg),#06070b); color:var(--text); line-height:1.55;
-    }
-    a{color:inherit; text-decoration:none}
-    header{
-      border-bottom:1px solid var(--border);
-      background:rgba(11,15,23,.85); backdrop-filter: blur(10px);
-      position:sticky; top:0; z-index:10;
-    }
-    .container{max-width:980px; margin:0 auto; padding:24px}
-    .nav{display:flex; justify-content:space-between; align-items:center; gap:14px; flex-wrap:wrap; padding:14px 24px}
-    .brand strong{font-size:16px; display:block}
-    .brand span{font-size:12px; color:var(--muted)}
-    .links{display:flex; gap:10px; flex-wrap:wrap}
-    .links a{
-      font-size:13px; padding:8px 10px; border:1px solid var(--border);
-      border-radius:10px; color:var(--text);
-    }
-    .links a:hover{border-color:var(--accent)}
-    .hero{
-      margin-top:18px; padding:22px; border:1px solid var(--border);
-      border-radius:18px; background:rgba(17,24,39,.6);
-    }
-    h1{margin:0 0 8px; font-size:28px}
-    .muted{color:var(--muted)}
-    .pillrow{display:flex; gap:10px; flex-wrap:wrap; margin-top:12px}
-    .pill{
-      font-size:12px; padding:6px 10px; border-radius:999px;
-      border:1px solid var(--border); background:rgba(31,41,55,.35);
-    }
-    .grid{display:grid; gap:14px; margin-top:18px}
-    @media (min-width: 860px){ .grid{grid-template-columns:1fr 1fr} }
-    .card{
-      display:block;
-      padding:18px; border:1px solid var(--border); border-radius:18px;
-      background:rgba(17,24,39,.55);
-      transition:transform .08s ease, border-color .08s ease;
-      min-height:120px;
-    }
-    .card:hover{transform:translateY(-2px); border-color:var(--accent)}
-    .card h2{margin:0 0 6px; font-size:18px}
-    .card p{margin:0; color:var(--muted); font-size:13px}
-    .btnrow{display:flex; gap:10px; flex-wrap:wrap; margin-top:14px}
-    .btn{
-      display:inline-block; padding:10px 12px; border-radius:12px;
-      border:1px solid var(--border); background:rgba(31,41,55,.35);
-      font-size:13px;
-    }
-    .btn:hover{border-color:var(--accent)}
-    footer{margin:22px 0 10px; color:var(--muted); font-size:12px; text-align:center}
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Miguel de la Rosa | Portfolio profesional</title>
+  <meta name="description" content="Portfolio profesional de Miguel de la Rosa, orientado a ciberseguridad, CV, presentación, blog divulgativo y LinkedIn." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-<header>
-  <div class="nav">
-    <div class="brand">
-      <strong>Miguel de la Rosa</strong>
-      <span>CV web · Ciberseguridad · Madrid / Remoto</span>
-    </div>
-    <nav class="links" aria-label="Enlaces rápidos">
-      <a href="carta.html">Carta</a>
-      <a href="cv.html">CV</a>
-      <a href="linkedin.html">LinkedIn</a>
-      <a href="presentacion.html">Presentación</a>
-      <a href="blog.html">Blog</a>
-      <a href="oferta.html">Oferta</a>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html">Miguel<span>.</span>Cybersecurity</a>
+      <div class="nav-links">
+        <a class="active" href="index.html">Inicio</a>
+        <a href="cv.html">CV</a>
+        <a href="blog.html">Blog</a>
+        <a href="presentacion.html">Presentación</a>
+        <a href="linkedin.html">LinkedIn</a>
+      </div>
     </nav>
-  </div>
-</header>
+  </header>
 
-<main class="container">
-  <section class="hero">
-    <h1>Cybersecurity · Seguridad de la Información</h1>
-    <p class="muted">
-      Profesional de Seguridad de la Información en Sener, con foco en entorno Microsoft (Azure / Active Directory / Endpoint)
-      y automatización con PowerShell. Esta web reúne los materiales del proyecto (carta, CV, LinkedIn, presentación, blog,
-      evidencias de Perusall y oferta objetivo).
-    </p>
-    <div class="pillrow">
-      <span class="pill">Azure</span><span class="pill">Active Directory</span><span class="pill">Endpoint (MECM)</span>
-      <span class="pill">PowerShell</span><span class="pill">SC-900</span><span class="pill">Inglés</span>
-    </div>
-    <div class="btnrow">
-      <a class="btn" href="assets/CV_Miguel_de_la_Rosa.pdf" target="_blank" rel="noopener">Descargar CV (PDF)</a>
-      <a class="btn" href="https://www.linkedin.com/in/miguel-de-la-rosa-de-la-morena-97800121a/" target="_blank" rel="noopener">Ver LinkedIn</a>
-      <a class="btn" href="contacto.html">Contacto</a>
-    </div>
-  </section>
+  <main>
+    <section class="hero">
+      <div>
+        <div class="eyebrow">Portfolio profesional · EPA</div>
+        <h1>Ciberseguridad con enfoque técnico, claro y práctico.</h1>
+        <p class="lead">
+          Soy Miguel de la Rosa, estudiante de Ingeniería Informática en la UPM y profesional con experiencia en ciberseguridad. Este sitio reúne mi CV, presentación profesional, blog divulgativo y perfil de LinkedIn, con una línea visual común y coherente.
+        </p>
 
-  <section class="grid" aria-label="Secciones del proyecto">
-    <a class="card" href="carta.html">
-      <h2>Carta de presentación</h2>
-      <p>Cuerpo completo de la carta adaptada a la oferta de Cybersecurity Analyst.</p>
-    </a>
-    <a class="card" href="cv.html">
-      <h2>CV tradicional</h2>
-      <p>Versión web + enlace al PDF (formato ATS y coherente con LinkedIn).</p>
-    </a>
-    <a class="card" href="linkedin.html">
-      <h2>Perfil de LinkedIn</h2>
-      <p>Titular, “Acerca de” y palabras clave optimizadas + enlace al perfil.</p>
-    </a>
-    <a class="card" href="presentacion.html">
-      <h2>Presentación oral</h2>
-      <p>Guion (2–3 min) + diapositivas/vídeo si lo incluyes.</p>
-    </a>
-    <a class="card" href="blog.html">
-      <h2>Blog divulgativo</h2>
-      <p>Entrada divulgativa alineada con operaciones SOC/IR y mejora continua.</p>
-    </a>
-    <a class="card" href="perusall.html">
-      <h2>Perusall</h2>
-      <p>Evidencias (capturas) + reflexión breve de aprendizaje.</p>
-    </a>
-    <a class="card" href="oferta.html">
-      <h2>Oferta elegida</h2>
-      <p>Oferta de Cybersecurity Analyst + mini análisis de encaje.</p>
-    </a>
-    <a class="card" href="contacto.html">
-      <h2>Contacto</h2>
-      <p>Email profesional, ubicación y enlaces (LinkedIn/GitHub).</p>
-    </a>
-  </section>
+        <div class="actions">
+          <a class="btn btn-primary" href="cv.html">Ver CV</a>
+          <a class="btn btn-secondary" href="presentacion.html">Ver presentación</a>
+        </div>
+      </div>
 
-  <footer>© <span id="y"></span> Miguel de la Rosa · CV web</footer>
-</main>
+      <aside class="hero-card">
+        <div class="stat">
+          <strong>4 años</strong>
+          <span>de experiencia en ciberseguridad</span>
+        </div>
+        <div class="stat">
+          <strong>Microsoft Security</strong>
+          <span>Defender, Intune, Entra ID, Azure y Purview</span>
+        </div>
+        <div class="stat">
+          <strong>Objetivo</strong>
+          <span>Cybersecurity Analyst</span>
+        </div>
+      </aside>
+    </section>
 
-<script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+    <section class="section">
+      <h2>Contenido del portfolio</h2>
+
+      <div class="grid grid-3">
+        <article class="card">
+          <h3>CV profesional</h3>
+          <p>
+            Versión web del currículum, orientada a ciberseguridad y acompañada de un PDF descargable.
+          </p>
+          <a class="btn btn-secondary" href="cv.html">Abrir CV</a>
+        </article>
+
+        <article class="card">
+          <h3>Blog divulgativo</h3>
+          <p>
+            Entrada sobre la importancia de la concienciación en ciberseguridad y el concepto de firewall humano.
+          </p>
+          <a class="btn btn-secondary" href="blog.html">Leer blog</a>
+        </article>
+
+        <article class="card">
+          <h3>Presentación profesional</h3>
+          <p>
+            Vídeo integrado y resumen de la propuesta profesional sobre reducción del riesgo de phishing.
+          </p>
+          <a class="btn btn-secondary" href="presentacion.html">Ver presentación</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="note">
+        Este sitio está diseñado con una estética uniforme: fondo oscuro, tarjetas translúcidas, botones redondeados, tipografía clara y navegación común en todas las páginas.
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Miguel de la Rosa · Portfolio profesional</p>
+  </footer>
 </body>
 </html>
