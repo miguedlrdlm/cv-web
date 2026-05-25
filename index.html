@@ -3,187 +3,102 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Miguel de la Rosa | Portfolio profesional</title>
-
-  <meta 
-    name="description" 
-    content="Portfolio profesional de Miguel de la Rosa, orientado a ciberseguridad, carta de presentación, CV, presentación profesional, blog divulgativo y LinkedIn." 
-  />
-
+  <meta name="description" content="Portfolio profesional de Miguel de la Rosa orientado a ciberseguridad, CV, carta de presentación, blog divulgativo, presentación oral y LinkedIn." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <header class="site-header">
-    <nav class="nav">
-      <a class="brand" href="index.html">Miguel<span>.</span>Cybersecurity</a>
-
-      <div class="nav-links">
-        <a class="active" href="index.html">Inicio</a>
-        <a href="carta.html">Carta</a>
-        <a href="cv.html">CV</a>
-        <a href="blog.html">Blog</a>
-        <a href="presentacion.html">Presentación</a>
-        <a href="linkedin.html">LinkedIn</a>
-      </div>
-    </nav>
+    <h1>Miguel de la Rosa</h1>
+    <p>Portfolio profesional orientado a ciberseguridad, comunicación académica y desarrollo profesional.</p>
   </header>
 
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a class="active" href="index.html">Inicio</a>
+      <a href="cv.html">CV</a>
+      <a href="carta.html">Carta</a>
+      <a href="presentacion.html">Presentación</a>
+      <a href="blog.html">Blog</a>
+      <a href="linkedin.html">LinkedIn</a>
+    </div>
+  </nav>
+
   <main>
-    <!-- HERO PRINCIPAL -->
-    <section class="hero">
-      <div>
-        <div class="eyebrow">Portfolio profesional · EPA</div>
-
-        <h1>Ciberseguridad con enfoque técnico, claro y práctico.</h1>
-
-        <p class="lead">
-          Soy Miguel de la Rosa, estudiante de Ingeniería Informática en la Universidad Politécnica de Madrid y profesional con experiencia en ciberseguridad. Este sitio reúne mi carta de presentación, mi CV, mi presentación profesional, mi blog divulgativo y mi perfil de LinkedIn, con una línea visual común y coherente.
-        </p>
-
-        <div class="actions">
-          <a class="btn btn-primary" href="cv.html">Ver CV</a>
-          <a class="btn btn-secondary" href="presentacion.html">Ver presentación</a>
-        </div>
-      </div>
-
-      <aside class="hero-card">
-        <div class="stat">
-          <strong>4 años</strong>
-          <span>de experiencia en ciberseguridad</span>
-        </div>
-
-        <div class="stat">
-          <strong>Microsoft Security</strong>
-          <span>Defender, Intune, Entra ID, Azure y Purview</span>
-        </div>
-
-        <div class="stat">
-          <strong>Objetivo</strong>
-          <span>Cybersecurity Analyst</span>
-        </div>
-      </aside>
-    </section>
-
-    <!-- INTRODUCCIÓN DEL PORTFOLIO -->
-    <section class="section">
-      <div class="card">
-        <h2>Sobre este portfolio</h2>
-
-        <p>
-          Este portfolio profesional forma parte de la asignatura Español Profesional y Académico y está diseñado como una presentación digital de mi perfil. El objetivo es mostrar de forma clara, visual y organizada mi trayectoria, mis competencias técnicas y mi capacidad para comunicar contenidos profesionales relacionados con la ciberseguridad.
-        </p>
-
-        <p>
-          La estructura del sitio mantiene una estética uniforme en todas las páginas: fondo oscuro, tarjetas translúcidas, navegación común, botones redondeados y una jerarquía visual clara. De esta forma, el contenido se presenta con coherencia y facilita la lectura tanto a un público académico como profesional.
+    <section class="card">
+      <div class="card-header">
+        <span class="eyebrow">Portfolio profesional</span>
+        <h2>Bienvenido a mi portfolio web</h2>
+        <p class="muted">
+          Este sitio reúne las principales entregas de la asignatura Español Profesional y Académico:
+          currículum, carta de presentación, presentación oral profesional, blog divulgativo y perfil de LinkedIn.
         </p>
       </div>
-    </section>
 
-    <!-- CONTENIDO DEL PORTFOLIO -->
-    <section class="section">
-      <h2>Contenido del portfolio</h2>
+      <p>
+        Mi objetivo profesional es seguir desarrollándome en el ámbito de la ciberseguridad, especialmente en
+        monitorización, respuesta ante incidentes, protección de endpoints, gestión de vulnerabilidades y seguridad
+        en entornos Microsoft.
+      </p>
 
-      <div class="grid grid-3">
-        <article class="card">
-          <h3>Carta de presentación</h3>
-
-          <p>
-            Presentación profesional adaptada al puesto objetivo de Cybersecurity Analyst, destacando experiencia, motivación y competencias clave.
-          </p>
-
-          <a class="btn btn-secondary" href="carta.html">Leer carta</a>
-        </article>
-
-        <article class="card">
-          <h3>CV profesional</h3>
-
-          <p>
-            Versión web del currículum, orientada al perfil de Cybersecurity Analyst y acompañada de un PDF descargable.
-          </p>
-
-          <a class="btn btn-secondary" href="cv.html">Abrir CV</a>
-        </article>
-
-        <article class="card">
-          <h3>Blog divulgativo</h3>
-
-          <p>
-            Entrada sobre la importancia de la concienciación en ciberseguridad y el papel de los empleados como firewall humano.
-          </p>
-
-          <a class="btn btn-secondary" href="blog.html">Leer blog</a>
-        </article>
+      <div class="actions">
+        <a class="btn btn-primary" href="cv.html">Ver mi CV</a>
+        <a class="btn btn-secondary" href="presentacion.html">Ver presentación</a>
       </div>
     </section>
 
-    <!-- SEGUNDA FILA DE CONTENIDOS -->
-    <section class="section">
-      <div class="grid grid-2">
-        <article class="card">
-          <h3>Presentación profesional</h3>
+    <section class="three-grid">
+      <article class="mini-card">
+        <h3>CV profesional</h3>
+        <p class="muted">
+          Versión web de mi currículum, con experiencia, formación, competencias técnicas y enlace de descarga.
+        </p>
+        <a href="cv.html">Ir al CV</a>
+      </article>
 
-          <p>
-            Vídeo integrado y resumen de una propuesta profesional para reducir el riesgo de phishing en una empresa mediante formación, simulaciones y cultura de reporte.
-          </p>
+      <article class="mini-card">
+        <h3>Carta de presentación</h3>
+        <p class="muted">
+          Presentación profesional adaptada a una oferta de Cybersecurity Analyst.
+        </p>
+        <a href="carta.html">Leer carta</a>
+      </article>
 
-          <a class="btn btn-secondary" href="presentacion.html">Ver presentación</a>
-        </article>
-
-        <article class="card">
-          <h3>Perfil de LinkedIn</h3>
-
-          <p>
-            Acceso al perfil profesional de LinkedIn, alineado con el CV y con el objetivo de reforzar mi marca personal en ciberseguridad.
-          </p>
-
-          <a class="btn btn-secondary" href="linkedin.html">Ver LinkedIn</a>
-        </article>
-      </div>
+      <article class="mini-card">
+        <h3>Blog divulgativo</h3>
+        <p class="muted">
+          Entrada divulgativa sobre la importancia de la concienciación en ciberseguridad y el firewall humano.
+        </p>
+        <a href="blog.html">Leer blog</a>
+      </article>
     </section>
 
-    <!-- ENFOQUE PROFESIONAL -->
-    <section class="section">
-      <h2>Enfoque profesional</h2>
-
-      <div class="grid grid-3">
-        <article class="card">
-          <h3>Seguridad en entornos Microsoft</h3>
-
-          <p>
-            Experiencia práctica con Microsoft Defender, Intune, Entra ID, Azure y Purview para mejorar la protección de usuarios, endpoints y datos corporativos.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Gestión de riesgos e incidentes</h3>
-
-          <p>
-            Participación en tareas de análisis de eventos, revisión de alertas, gestión de vulnerabilidades y apoyo en la respuesta ante incidentes de seguridad.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Comunicación técnica clara</h3>
-
-          <p>
-            Capacidad para explicar riesgos, controles y medidas de seguridad de forma comprensible para perfiles técnicos y no técnicos.
-          </p>
-        </article>
+    <section class="card">
+      <div class="card-header">
+        <span class="eyebrow">Perfil objetivo</span>
+        <h2>Cybersecurity Analyst</h2>
       </div>
-    </section>
 
-    <!-- NOTA FINAL -->
-    <section class="section">
-      <div class="note">
-        Este sitio está diseñado para presentar de forma coherente mi perfil profesional, combinando experiencia técnica, comunicación clara y orientación hacia posiciones de ciberseguridad.
+      <p>
+        Este portfolio está orientado a un perfil técnico de ciberseguridad con capacidad para analizar eventos,
+        colaborar en la respuesta ante incidentes, aplicar políticas de seguridad y comunicar riesgos de forma clara
+        a perfiles técnicos y no técnicos.
+      </p>
+
+      <div class="tags">
+        <span class="tag">Microsoft Defender</span>
+        <span class="tag">Intune</span>
+        <span class="tag">Azure / Entra ID</span>
+        <span class="tag">Gestión de vulnerabilidades</span>
+        <span class="tag">Respuesta ante incidentes</span>
+        <span class="tag">Concienciación</span>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <p>© 2026 Miguel de la Rosa · Portfolio profesional</p>
+  <footer class="site-footer">
+    <p>© 2026 Miguel de la Rosa · Portfolio profesional EPA · Universidad Politécnica de Madrid</p>
   </footer>
 </body>
 </html>
