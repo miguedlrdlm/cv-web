@@ -1,237 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Presentación profesional | Miguel de la Rosa</title>
+  <title>Presentación profesional | Miguel de la Rosa de la Morena</title>
 
-  <style>
-    :root {
-      --color-principal: #0f172a;
-      --color-secundario: #1e293b;
-      --color-acento: #2563eb;
-      --color-fondo: #f8fafc;
-      --color-texto: #334155;
-      --color-blanco: #ffffff;
-      --color-borde: #e2e8f0;
-    }
+  <meta 
+    name="description" 
+    content="Presentación profesional sobre cómo reducir el riesgo de phishing mediante un programa de concienciación en ciberseguridad." 
+  />
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: var(--color-fondo);
-      color: var(--color-texto);
-      line-height: 1.6;
-    }
-
-    header {
-      background: linear-gradient(135deg, var(--color-principal), var(--color-secundario));
-      color: var(--color-blanco);
-      padding: 50px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 2.4rem;
-      margin-bottom: 12px;
-    }
-
-    header p {
-      max-width: 800px;
-      margin: 0 auto;
-      font-size: 1.1rem;
-      color: #dbeafe;
-    }
-
-    nav {
-      background-color: var(--color-blanco);
-      border-bottom: 1px solid var(--color-borde);
-      padding: 14px 20px;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    nav a {
-      color: var(--color-principal);
-      text-decoration: none;
-      font-weight: 600;
-      margin: 0 12px;
-      font-size: 0.95rem;
-    }
-
-    nav a:hover {
-      color: var(--color-acento);
-    }
-
-    main {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 50px 20px;
-    }
-
-    section {
-      background-color: var(--color-blanco);
-      border: 1px solid var(--color-borde);
-      border-radius: 18px;
-      padding: 35px;
-      margin-bottom: 35px;
-      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
-    }
-
-    section h2 {
-      color: var(--color-principal);
-      font-size: 1.7rem;
-      margin-bottom: 18px;
-    }
-
-    section h3 {
-      color: var(--color-principal);
-      font-size: 1.25rem;
-      margin-top: 24px;
-      margin-bottom: 10px;
-    }
-
-    p {
-      margin-bottom: 16px;
-    }
-
-    .intro {
-      font-size: 1.08rem;
-    }
-
-    .video-container {
-      position: relative;
-      width: 100%;
-      padding-bottom: 56.25%;
-      height: 0;
-      border-radius: 16px;
-      overflow: hidden;
-      background: #000;
-      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
-      margin-top: 25px;
-    }
-
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
-
-    .info-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-      margin-top: 25px;
-    }
-
-    .info-card {
-      background-color: #f8fafc;
-      border: 1px solid var(--color-borde);
-      border-radius: 14px;
-      padding: 20px;
-    }
-
-    .info-card h3 {
-      margin-top: 0;
-      font-size: 1.05rem;
-      color: var(--color-acento);
-    }
-
-    .info-card p {
-      font-size: 0.95rem;
-      margin-bottom: 0;
-    }
-
-    ul {
-      margin-left: 22px;
-      margin-top: 10px;
-    }
-
-    li {
-      margin-bottom: 8px;
-    }
-
-    .volver {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 12px 18px;
-      background-color: var(--color-acento);
-      color: var(--color-blanco);
-      text-decoration: none;
-      border-radius: 10px;
-      font-weight: 600;
-    }
-
-    .volver:hover {
-      background-color: #1d4ed8;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px 20px;
-      color: #64748b;
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 1.9rem;
-      }
-
-      nav a {
-        display: inline-block;
-        margin: 6px 8px;
-      }
-
-      main {
-        padding: 30px 15px;
-      }
-
-      section {
-        padding: 25px;
-      }
-
-      .info-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
 
-  <header>
-    <h1>Presentación profesional</h1>
+  <header class="site-header">
+    <h1>Miguel de la Rosa de la Morena</h1>
     <p>
-      Cómo reducir el riesgo de phishing mediante un programa de concienciación en ciberseguridad.
+      Portfolio profesional orientado a ciberseguridad, comunicación académica y desarrollo profesional.
     </p>
   </header>
 
-  <nav>
-    <a href="index.html">Inicio</a>
-    <a href="cv.html">CV</a>
-    <a href="presentacion.html">Presentación</a>
-    <a href="blog.html">Blog</a>
-    <a href="linkedin.html">LinkedIn</a>
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">Miguel de la Rosa de la Morena</a>
+
+      <div class="nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="carta.html">Carta</a>
+        <a href="cv.html">CV</a>
+        <a href="blog.html">Blog</a>
+        <a class="active" href="presentacion.html">Presentación</a>
+        <a href="linkedin.html">LinkedIn</a>
+      </div>
+    </div>
   </nav>
 
   <main>
 
-    <section>
-      <h2>Vídeo de la presentación</h2>
+    <section class="card">
+      <div class="card-header">
+        <span class="eyebrow">Presentación profesional</span>
+        <h2>Vídeo de la presentación</h2>
 
-      <p class="intro">
+        <p class="muted">
+          Cómo reducir el riesgo de phishing mediante un programa de concienciación en ciberseguridad.
+        </p>
+      </div>
+
+      <p>
         En esta presentación explico la importancia de la concienciación en ciberseguridad dentro de las empresas y cómo los empleados pueden actuar como un verdadero <strong>firewall humano</strong> frente a amenazas como el phishing.
       </p>
 
@@ -239,7 +58,7 @@
         El objetivo es presentar una propuesta profesional, clara y aplicable a un entorno empresarial, conectando el problema actual de los ataques dirigidos a empleados con posibles medidas de prevención, formación y mejora continua.
       </p>
 
-      <div class="video-container">
+      <div class="video-wrapper">
         <iframe
           src="https://www.youtube.com/embed/9AcwDee_cIo"
           title="Presentación profesional - Concienciación en ciberseguridad"
@@ -249,8 +68,11 @@
       </div>
     </section>
 
-    <section>
-      <h2>Resumen de la presentación</h2>
+    <section class="card">
+      <div class="card-header">
+        <span class="eyebrow">Resumen</span>
+        <h2>Resumen de la presentación</h2>
+      </div>
 
       <p>
         La presentación parte de una idea principal: en muchas organizaciones, la seguridad no depende únicamente de las herramientas técnicas, sino también del comportamiento diario de las personas. Los ataques de phishing aprovechan errores humanos, falta de atención o desconocimiento de señales de riesgo.
@@ -260,32 +82,35 @@
         Por ello, se propone reforzar la formación de los empleados mediante programas de concienciación, simulaciones de phishing, comunicación interna clara y medición de resultados. El objetivo no es culpar al usuario, sino convertirlo en una primera línea de defensa más preparada.
       </p>
 
-      <div class="info-grid">
-        <div class="info-card">
+      <div class="three-grid">
+        <article class="mini-card">
           <h3>Problema</h3>
-          <p>
+          <p class="muted">
             Los ataques de phishing siguen siendo una de las principales vías de entrada para comprometer cuentas, datos y sistemas corporativos.
           </p>
-        </div>
+        </article>
 
-        <div class="info-card">
+        <article class="mini-card">
           <h3>Propuesta</h3>
-          <p>
+          <p class="muted">
             Crear un programa de concienciación continuo, práctico y medible, adaptado al nivel de los empleados.
           </p>
-        </div>
+        </article>
 
-        <div class="info-card">
+        <article class="mini-card">
           <h3>Resultado esperado</h3>
-          <p>
+          <p class="muted">
             Reducir clics en enlaces maliciosos, mejorar la detección temprana y aumentar la cultura de seguridad.
           </p>
-        </div>
+        </article>
       </div>
     </section>
 
-    <section>
-      <h2>Ideas clave</h2>
+    <section class="card">
+      <div class="card-header">
+        <span class="eyebrow">Contenido</span>
+        <h2>Ideas clave</h2>
+      </div>
 
       <ul>
         <li>
@@ -306,8 +131,11 @@
       </ul>
     </section>
 
-    <section>
-      <h2>Relación con mi perfil profesional</h2>
+    <section class="card">
+      <div class="card-header">
+        <span class="eyebrow">Perfil profesional</span>
+        <h2>Relación con mi perfil profesional</h2>
+      </div>
 
       <p>
         Esta presentación está conectada con mi perfil orientado a la ciberseguridad, especialmente en áreas como la protección del correo electrónico, la respuesta ante incidentes, la gestión de vulnerabilidades y la mejora de políticas de seguridad en entornos corporativos.
@@ -317,13 +145,17 @@
         Además, refleja mi interés por una ciberseguridad práctica, donde la tecnología, los procesos y las personas trabajen de forma coordinada para reducir el riesgo real de una organización.
       </p>
 
-      <a class="volver" href="index.html">Volver al inicio</a>
+      <div class="actions">
+        <a class="btn btn-secondary" href="index.html">Volver al inicio</a>
+      </div>
     </section>
 
   </main>
 
-  <footer>
-    <p>Portfolio profesional y académico · Miguel de la Rosa</p>
+  <footer class="site-footer">
+    <p>
+      © 2026 Miguel de la Rosa de la Morena · Portfolio profesional EPA · Universidad Politécnica de Madrid
+    </p>
   </footer>
 
 </body>
