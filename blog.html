@@ -3,370 +3,57 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Blog divulgativo | Firewall humano</title>
 
-  <style>
-    :root {
-      --bg: #f5f7fb;
-      --card: #ffffff;
-      --text: #1f2937;
-      --muted: #6b7280;
-      --primary: #0f172a;
-      --accent: #2563eb;
-      --accent-soft: #dbeafe;
-      --border: #e5e7eb;
-      --shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
-      --radius: 22px;
-      --max-width: 920px;
-    }
+  <meta 
+    name="description" 
+    content="Blog divulgativo sobre ciberseguridad, phishing y el concepto de firewall humano en la empresa." 
+  />
 
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.7;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-    /* =========================
-       CABECERA GENERAL
-       ========================= */
-    header {
-      background: rgba(255, 255, 255, 0.92);
-      border-bottom: 1px solid var(--border);
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      backdrop-filter: blur(12px);
-    }
-
-    .nav {
-      max-width: 1120px;
-      margin: 0 auto;
-      padding: 18px 24px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 24px;
-    }
-
-    .brand {
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      color: var(--primary);
-      font-size: 1.05rem;
-    }
-
-    .brand span {
-      color: var(--accent);
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 18px;
-      font-size: 0.95rem;
-      color: var(--muted);
-    }
-
-    .nav-links a:hover {
-      color: var(--accent);
-    }
-
-    /* =========================
-       HERO DEL BLOG
-       ========================= */
-    .hero {
-      max-width: 1120px;
-      margin: 42px auto 0;
-      padding: 0 24px;
-    }
-
-    .hero-card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      overflow: hidden;
-    }
-
-    .hero-image {
-      aspect-ratio: 16 / 9;
-      background: #e5e7eb;
-      overflow: hidden;
-    }
-
-    .hero-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .hero-content {
-      padding: 38px;
-    }
-
-    .meta {
-      display: inline-flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      align-items: center;
-      padding: 8px 14px;
-      margin-bottom: 18px;
-      border-radius: 999px;
-      background: var(--accent-soft);
-      color: #1d4ed8;
-      font-size: 0.88rem;
-      font-weight: 700;
-    }
-
-    h1 {
-      margin: 0;
-      max-width: 900px;
-      color: var(--primary);
-      font-size: clamp(2rem, 5vw, 3.6rem);
-      line-height: 1.08;
-      letter-spacing: -0.055em;
-    }
-
-    .lead {
-      margin: 24px 0 0;
-      max-width: 850px;
-      font-size: 1.18rem;
-      color: #374151;
-      border-left: 5px solid var(--accent);
-      padding-left: 20px;
-    }
-
-    /* =========================
-       ARTÍCULO
-       ========================= */
-    main {
-      max-width: var(--max-width);
-      margin: 42px auto;
-      padding: 0 24px;
-    }
-
-    article {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: 42px;
-    }
-
-    article h2 {
-      margin-top: 46px;
-      margin-bottom: 14px;
-      color: var(--primary);
-      font-size: 1.65rem;
-      line-height: 1.25;
-      letter-spacing: -0.035em;
-    }
-
-    article h2:first-child {
-      margin-top: 0;
-    }
-
-    article p {
-      margin: 0 0 20px;
-      font-size: 1.03rem;
-    }
-
-    strong {
-      color: var(--primary);
-    }
-
-    figure {
-      margin: 38px 0;
-      border-radius: 20px;
-      overflow: hidden;
-      border: 1px solid var(--border);
-      background: #f9fafb;
-    }
-
-    figure img {
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      object-fit: cover;
-    }
-
-    figcaption {
-      padding: 14px 18px;
-      font-size: 0.92rem;
-      color: var(--muted);
-      background: #ffffff;
-      border-top: 1px solid var(--border);
-    }
-
-    .highlight-box {
-      margin: 34px 0;
-      padding: 24px;
-      border-radius: 18px;
-      background: #f8fafc;
-      border: 1px solid var(--border);
-    }
-
-    .highlight-box p {
-      margin: 0;
-      font-size: 1.05rem;
-    }
-
-    /* =========================
-       FUENTES
-       ========================= */
-    .sources {
-      margin-top: 46px;
-      padding: 28px;
-      border-radius: 18px;
-      background: #f8fafc;
-      border: 1px solid var(--border);
-    }
-
-    .sources h2 {
-      margin-top: 0;
-      font-size: 1.35rem;
-    }
-
-    .sources ul {
-      margin: 0;
-      padding-left: 20px;
-    }
-
-    .sources li {
-      margin-bottom: 10px;
-      color: #374151;
-    }
-
-    /* =========================
-       BOTÓN FINAL
-       ========================= */
-    .back-home {
-      margin-top: 36px;
-      text-align: center;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 13px 22px;
-      border-radius: 999px;
-      background: var(--primary);
-      color: #ffffff;
-      font-weight: 700;
-      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-    }
-
-    .btn:hover {
-      background: var(--accent);
-      transform: translateY(-2px);
-      box-shadow: 0 14px 30px rgba(37, 99, 235, 0.22);
-    }
-
-    footer {
-      max-width: 1120px;
-      margin: 0 auto;
-      padding: 24px;
-      text-align: center;
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
-
-    /* =========================
-       RESPONSIVE
-       ========================= */
-    @media (max-width: 760px) {
-      .nav {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .nav-links {
-        flex-wrap: wrap;
-      }
-
-      .hero-content,
-      article {
-        padding: 26px;
-      }
-
-      .lead {
-        font-size: 1.05rem;
-      }
-
-      article h2 {
-        font-size: 1.4rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
 
-  <!-- 
-    CABECERA:
-    Cambia los enlaces si tus archivos tienen otros nombres.
-    Ejemplo: index.html, cv.html, presentacion.html, blog.html
-  -->
-  <header>
-    <nav class="nav">
-      <a class="brand" href="index.html">Miguel de la Rosa </a>
-
-      <div class="nav-links">
-        <a href="index.html">Inicio</a>
-        <a href="cv.html">CV</a>
-        <a href="presentacion.html">Presentación</a>
-        <a href="blog.html">Blog</a>
-        <a href="linkedin.html">LinkedIn</a>
-      </div>
-    </nav>
+  <header class="site-header">
+    <h1>Miguel de la Rosa de la Morena</h1>
+    <p>
+      Portfolio profesional orientado a ciberseguridad y desarrollo profesional.
+    </p>
   </header>
 
-  <!-- HERO DEL BLOG -->
-  <section class="hero">
-    <div class="hero-card">
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <div class="nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="carta.html">Carta</a>
+        <a href="cv.html">CV</a>
+        <a class="active" href="blog.html">Blog</a>
+        <a href="presentacion.html">Presentación</a>
+        <a href="linkedin.html">LinkedIn</a>
+      </div>
+    </div>
+  </nav>
 
-      <figure class="hero-image">
-        <!-- 
-          Cambia esta ruta si guardas la imagen en otra carpeta.
-          Ruta recomendada: /img/blog-firewall-humano-cabecera.png
-        -->
+  <main>
+
+    <section class="card blog-article">
+      <div class="card-header">
+        <span class="eyebrow">Ciberseguridad · Divulgación · Lectura aproximada: 5 minutos</span>
+        <h2>El firewall más importante de una empresa no siempre está en el ordenador</h2>
+
+        <p class="blog-lead">
+          ¿Alguna vez has recibido un correo que parecía urgente, con un enlace para cambiar la contraseña, revisar una factura o confirmar una entrega? A simple vista puede parecer un mensaje más. Pero, para un atacante, ese pequeño clic puede ser la puerta de entrada a toda una empresa.
+        </p>
+      </div>
+
+      <figure>
         <img
           src="assets/blog-firewall-humano-cabecera.png"
           alt="Representación visual de un ataque de phishing con un anzuelo digital dirigido a un usuario"
         />
       </figure>
-
-      <div class="hero-content">
-        <div class="meta">
-          Ciberseguridad · Divulgación · Lectura aproximada: 5 minutos
-        </div>
-
-        <h1>El firewall más importante de una empresa no siempre está en el ordenador</h1>
-
-        <p class="lead">
-          ¿Alguna vez has recibido un correo que parecía urgente, con un enlace para cambiar la contraseña, revisar una factura o confirmar una entrega? A simple vista puede parecer un mensaje más. Pero, para un atacante, ese pequeño clic puede ser la puerta de entrada a toda una empresa.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <main>
-    <article>
 
       <h2>Los ataques ya no siempre empiezan con una máquina</h2>
 
@@ -393,10 +80,6 @@
       </p>
 
       <figure>
-        <!-- 
-          Imagen interior 1.
-          Ruta recomendada: /img/blog-firewall-humano-escudo.png
-        -->
         <img
           src="assets/blog-firewall-humano-escudo.png"
           alt="Empleado representado como firewall humano protegiendo la empresa con un escudo digital"
@@ -448,7 +131,7 @@
         Por eso, una cultura de ciberseguridad sana no se basa en el miedo, sino en la confianza. Si un empleado piensa que será castigado por avisar de un error, quizá tarde más en comunicarlo. Y en ciberseguridad, el tiempo importa mucho. Avisar rápido puede evitar que un incidente pequeño se convierta en un problema grave.
       </p>
 
-      <div class="highlight-box">
+      <div class="source-list">
         <p>
           Una buena empresa no espera que todos sean expertos. Les da herramientas, canales sencillos para reportar sospechas y mensajes claros: “si dudas, pregunta”; “si has hecho clic, avisa”; “reportar a tiempo ayuda a todos”.
         </p>
@@ -461,10 +144,6 @@
       </p>
 
       <figure>
-        <!-- 
-          Imagen interior 2.
-          Ruta recomendada: /img/blog-personas-tecnologia.png
-        -->
         <img
           src="assets/blog-personas-tecnologia.png"
           alt="Personas y tecnología colaborando para proteger la información de una empresa"
@@ -496,7 +175,7 @@
         En ciberseguridad, esos diez segundos pueden valer más que muchas herramientas.
       </p>
 
-      <section class="sources">
+      <section class="sources source-list">
         <h2>Fuentes consultadas</h2>
         <ul>
           <li>Verizon, <em>Data Breach Investigations Report 2025</em>.</li>
@@ -504,16 +183,17 @@
         </ul>
       </section>
 
-      <div class="back-home">
-        <!-- Cambia index.html si tu página principal tiene otro nombre -->
-        <a class="btn" href="index.html">Volver al inicio</a>
+      <div class="actions">
+        <a class="btn btn-secondary" href="index.html">Volver al inicio</a>
       </div>
+    </section>
 
-    </article>
   </main>
 
-  <footer>
-    <p>© 2026 Miguel de la Rosa · Portfolio profesional</p>
+  <footer class="site-footer">
+    <p>
+      © 2026 Miguel de la Rosa de la Morena · Portfolio profesional EPA · Universidad Politécnica de Madrid
+    </p>
   </footer>
 
 </body>
